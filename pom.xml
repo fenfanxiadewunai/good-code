@@ -5,7 +5,8 @@
 	<groupId>com.huang</groupId>
 	<artifactId>good-code</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+
+    <packaging>pom</packaging>
 
 	<name>good-code</name>
 	<url>http://maven.apache.org</url>
@@ -18,7 +19,7 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
+			<version>4.11</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -31,11 +32,6 @@
 			<groupId>org.slf4j</groupId>
 			<artifactId>jcl-over-slf4j</artifactId>
 			<version>1.5.6</version>
-		</dependency>
-		<dependency>
-			<groupId>commons-logging</groupId>
-			<artifactId>commons-logging</artifactId>
-			<version>99.0-does-not-exist</version>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -53,6 +49,19 @@
 			<artifactId>guava</artifactId>
 			<version>17.0</version>
 		</dependency>
+
+        <dependency>
+            <groupId>org.hsqldb</groupId>
+            <artifactId>hsqldb</artifactId>
+            <version>2.2.9</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.derby</groupId>
+            <artifactId>derby</artifactId>
+            <version>10.9.1.0</version>
+            <scope>test</scope>
+        </dependency>
 
 
 	</dependencies>

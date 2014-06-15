@@ -3,54 +3,54 @@ package com.huang.builder;
 
 public class ConditionObject {
 
-	private ConditionObject() {
-	}
+    private ConditionObject() {
+    }
 
-	public static Builder builder() {
-		return new Builder();
-	}
-	
-	private int id;
-	private String name;
-	
-	
-	public int getId() {
-		return id;
-	}
+    public static Builder builder() {
+        return new Builder();
+    }
 
-	public void setId(int id) {
-		this.id = id;
-	}
+    private int id;
+    private String name;
 
-	public String getName() {
-		return name;
-	}
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public int getId() {
+        return id;
+    }
 
-	public static class Builder {
-		
-		private int id;
-		private String name;
+    public void setId(int id) {
+        this.id = id;
+    }
 
-		public Builder setId(int id) {
-			this.id = id;
-			return this;
-		}
+    public String getName() {
+        return name;
+    }
 
-		public Builder setTitle(String name) {
-			this.name = name;
-			return this;
-		}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-		public ConditionObject build() {
-			ConditionObject condition = new ConditionObject();
-			condition.id = this.id;
-			condition.name = this.name;
-			return condition;
-		}
-	}
+    public static class Builder {
+
+        private int id;
+        private String name;
+
+        public Builder setId(int id) {
+            this.id = id;
+            return this;
+        }
+
+        public Builder setTitle(String name) {
+            this.name = name;
+            return this;
+        }
+
+        public ConditionObject build() {
+            ConditionObject condition = new ConditionObject();
+            condition.id = this.id;
+            condition.name = this.name;
+            return condition;
+        }
+    }
 
 }
